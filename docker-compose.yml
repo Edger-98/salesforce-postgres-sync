@@ -1,0 +1,9 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: sfsync
+      POSTGRES_PASSWORD: sfsync
+      POSTGRES_DB: sfsync
+    ports:
+      - "5432:5432"
